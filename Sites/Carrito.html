@@ -1,0 +1,175 @@
+<html>
+
+<head>
+	<title>Yuno</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+		integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+		integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+		crossorigin="anonymous"></script>
+	<LINK REL=StyleSheet HREF="../CSS/Style.css" TYPE="text/css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+		integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+		crossorigin="anonymous" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+		integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+		crossorigin="anonymous" />
+	<link rel="icon" href="../Img/logo-icon.svg" type="image/icon type">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+</head>
+
+<body>
+	<!--Menu-->
+	<nav class="navbar navbar-expand-lg shadow">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="HomePage.html"><img src="../Img/logo.svg" width="120"
+					class="d-inline-block align-top" alt="" /></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="Carrito.html">
+							<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+								class="bi bi-cart3" viewBox="0 0 16 16">
+								<path
+									d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Content -->
+	<div class="termsandcondition-content">
+		<h4>Artículos en el carrito</h4>
+				<!-- Despliegue de articulos-->
+				<p class="semiboldText textcolor-purple">Articulos</p>
+		<table id="cart" class="table table-condensed textcolor-white">
+			<thead>
+				<tr>
+					<th style="width:40%">Producto</th>
+					<th style="width:10%">Precio</th>
+					<th style="width:8%">Cantidad</th>
+					<th style="width:22%" class="text-center">Subtotal</th>
+					<th style="width:10%"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td data-th="Product">
+						<div class="row">
+							<div class="col-sm-3 hidden-xs"><img src="http://placehold.it/100x100" alt="..."
+									class="img-responsive" /></div>
+							<div class="col-sm-10">
+								<h4 class="nomargin">Nombre</h4>
+								<p>Lorem ipsum dolor sit amet.</p>
+							</div>
+						</div>
+					</td>
+					<td data-th="Price">₡15.000</td>
+					<td data-th="Quantity">
+						<input type="number" class="form-control text-center" value="1">
+					</td>
+					<td class="actions" data-th="">
+						<button class="btn btn-danger">Remover<i class="bi bi-x"></i></button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- Despliegue de tarjetas-->
+		<p class="semiboldText textcolor-purple">Forma de pago </p>
+
+		<!--Finalizar Compra-->
+		<p class="semiboldText textcolor-purple">Realizar compra</p>
+		<p>
+			<input type="checkbox" name="terms" id="terms" />
+			Sus datos personales se utilizarán para procesar su pedido, respaldar su experiencia en este sitio web y
+			para
+			otros fines descritos en nuestra
+			<a class="textcolor-blue" href="Privacidad.html">política de privacidad.</a>.
+		</p>
+		<p>
+			<input type="checkbox" name="terms" id="terms" />
+			He leído y estoy de acuerdo con los
+			<a class="textcolor-blue" href="Terminos Condiciones.html">terminos y condiciones</a>
+			del sitio web.
+			<input type="hidden" name="terms-field" value="1" />
+		</p>
+		<div class="total-box">
+			<p> Total: ₡15000</p>
+			<a class="btn btn-blue btn-dark" href="">Pagar</a>
+		</div>
+	</div>
+
+
+
+
+	<!-- Footer -->
+	<div class="footer">
+		<!-- end StartConsultation-->
+		<div class="footer-Content purple-background">
+			<div class="container">
+				<div class="row space-footer">
+					<div class="col-lg-4">
+						<div class="center">
+							<img id="logo-refran" src="../Img/logo-refran.svg" />
+						</div>
+						<div class="left social-media">
+							<a class="textcolor-white"
+								href="https://www.facebook.com/profile.php?id=100068881241500&viewas=100000686899395">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-facebook"
+									viewBox="0 0 16 16">
+									<path
+										d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+								</svg>
+								Siguenos en facebook
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="">
+							<p>Dirección San José Centro. De la iglesia los costales 100 mts sur.</p>
+							<p>Tel. 8730-5120 / 2234-7325</p>
+							<p>contacto@yunocr.com</p>
+							<p>Lunes a Sábado de 9:00am a 6:00pm / Domingo cerrado.</p>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<p class="semiboldText">Información importante</p>
+						<div class="terms">
+							<p><a class="textcolor-white" href="Garantia.html">Política de Garantía</a></p>
+							<p><a class="textcolor-white" href="Privacidad.html">Terminos De Privacidad</a></p>
+							<p><a class="textcolor-white" href="Terminos Condiciones.html">Terminos y condiciones</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p id="rightsandterms" class="">© 2021 YUNO. Todos los Derechos Reservados.</p>
+	</div>
+
+</body>
+
+</html>
