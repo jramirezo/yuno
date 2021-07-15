@@ -1,0 +1,16 @@
+
+<div class="formulario">
+    <h2>Ingresar un Videojuego</h2>
+    <form [formGroup]="FormJuegos"> 
+        <mat-form-field appearance="fill">
+            <mat-label> Ingresar Nombre             
+            </mat-label>
+            <input matInput type="text" formControlName="NombreJuego">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label appearance="fill">Ingresar Precio</mat-label>
+            <input matInput type="text" formControlName="PrecioJuego">
+        </mat-form-field>
+        <button class="btn-from-juego" mat-raised-button color="warn" (click)="agrergarJuego()">Mostrar parques adyacentes</button>
+    </form>
+</div>
