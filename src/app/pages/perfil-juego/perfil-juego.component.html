@@ -2,16 +2,23 @@
     <mat-card>
         <mat-card-header>
             <mat-card-title>
-                Nombre FormJuegos
+                {{game.name}}
             </mat-card-title>
             <mat-card-subtitle>Categoria</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Foto del juego">
+        <img mat-card-image src="{{game.picture}}" alt="Foto del juego">
         <mat-card-content>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id iure nihil dolores, non voluptatem debitis officia cum quidem eligendi voluptatibus, iste, assumenda provident vel possimus! Qui, id? Perspiciatis, ipsam neque.
+                {{game.description}}
             </p>
-            <span>Precio: 15000</span>
+            <mat-nav-list>
+                <mat-list-item>Tamaño: {{game.size}} </mat-list-item>
+                <!-- <mat-list-item *ngFor="let platform of game.platforms">{{platform}}</mat-list-item> -->
+                <!-- <mat-list-item>{{game.platforms[0].name}}</mat-list-item> -->
+                <mat-list-item><span>Precio: ${{game.price}}</span> </mat-list-item>
+            </mat-nav-list>
+           
+        
         </mat-card-content>
         <mat-card-actions>
             <button mat-raised-button color="primary">Comprar </button>

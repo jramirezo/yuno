@@ -17,6 +17,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
 
 import { FormJuegoComponent } from '../app/componentes/form-juego/form-juego.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -24,6 +25,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AdminJuegosComponent } from './pages/admin-juegos/admin-juegos.component';
 import { AdminJuegosListComponent } from './componentes/admin-juegos-list/admin-juegos-list.component';
 import { PerfilJuegoComponent } from './pages/perfil-juego/perfil-juego.component';
+import { HomeComponent } from './shared/home/home.component';
 
 
 @NgModule({
@@ -33,7 +35,8 @@ import { PerfilJuegoComponent } from './pages/perfil-juego/perfil-juego.componen
     HeaderComponent,
     AdminJuegosComponent,
     AdminJuegosListComponent,
-    PerfilJuegoComponent
+    PerfilJuegoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,8 @@ import { PerfilJuegoComponent } from './pages/perfil-juego/perfil-juego.componen
     MatTableModule,
     MatPaginatorModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    MatListModule
 
   ],
   providers: [],

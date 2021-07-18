@@ -1,3 +1,4 @@
+import { Platform } from "@angular/cdk/platform";
 
 export class Game{        
     id: string| undefined;
@@ -10,7 +11,7 @@ export class Game{
     size: string| undefined;
     cover: string| undefined;
     picture: string| undefined;
-    platforms: string[] |undefined;
+    platforms: Platform[] |undefined;
     categories: string[] |undefined;
 }
 
