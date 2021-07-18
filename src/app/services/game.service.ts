@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import {Game} from '../models/game';
+import {Game} from '../models/Game';
 import { Prueba } from '../models/Prueba';
 
 @Injectable({
@@ -9,14 +9,18 @@ import { Prueba } from '../models/Prueba';
 })
 export class GameService {
 
-  _baseUrl = 'http://localhost:8081/prueba/';
+  _baseUrl = 'http://localhost:8080/games/';
 
   constructor(private http: HttpClient) { }
 
 
-  getPrueba(): Observable<Prueba>{
-    return this.http.get<Prueba>(this._baseUrl); 
-  }
+    // getPrueba(): Observable<Prueba>{
+    //   return this.http.get<Prueba>(this._baseUrl); 
+    // }
 
+
+    getGames(): Observable<Game[]>{
+      return this.http.get<Game[]>(this._baseUrl);
+    }
 
 }

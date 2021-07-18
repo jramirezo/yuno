@@ -15,7 +15,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
-
+import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
 
 import { FormJuegoComponent } from '../app/componentes/form-juego/form-juego.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -47,7 +48,9 @@ import { PerfilJuegoComponent } from './pages/perfil-juego/perfil-juego.componen
     MatSelectModule,
     MatToolbarModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatCardModule,
+    MatIconModule
 
   ],
   providers: [],

@@ -1,8 +1,8 @@
-import { ClassGetter } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
 import { Prueba } from 'src/app/models/Prueba';
 import { GameService } from 'src/app/services/game.service';
-import {Game} from '../../models/game';
+import {Game} from '../../models/Game';
 
 
 @Component({
@@ -12,26 +12,32 @@ import {Game} from '../../models/game';
 })
 export class AdminJuegosListComponent implements OnInit {
 
-
-
-  dataJuegos: Game[] = [];
-
+  dataJuegos = new MatTableDataSource<Game>();
   prueba: Prueba | undefined;
-
-  displayedColumns: string[] = ['id', 'nombre', 'precio'];
+  displayedColumns: string[] = ['id', 'nombre', 'precio', 'editar', 'eliminar'];
 
   constructor(private gameService: GameService) { }
 
   ngOnInit(): void {
 
-    this.gameService.getPrueba().subscribe({
+    this.gameService.getGames().subscribe({
       next: res => {
-        this.prueba = res;
-        console.log(this.prueba);
+        this.dataJuegos.data = res;       
+        console.log(this.dataJuegos.data);
       }, error: err => {
         console.log(err);
       }
     });
+
+    }
+
+
+
+    editar(game: Game): void {
+
+    }
+
+    eliminar(game: Game): void {
 
     }
 
