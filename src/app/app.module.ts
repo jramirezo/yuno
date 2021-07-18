@@ -22,6 +22,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AdminJuegosComponent } from './pages/admin-juegos/admin-juegos.component';
 import { AdminJuegosListComponent } from './componentes/admin-juegos-list/admin-juegos-list.component';
+import { PerfilJuegoComponent } from './pages/perfil-juego/perfil-juego.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { AdminJuegosListComponent } from './componentes/admin-juegos-list/admin-
     FormJuegoComponent,
     HeaderComponent,
     AdminJuegosComponent,
-    AdminJuegosListComponent
+    AdminJuegosListComponent,
+    PerfilJuegoComponent
   ],
   imports: [
     BrowserModule,

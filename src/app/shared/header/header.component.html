@@ -1,25 +1,21 @@
 <div class="mat-typography">
     <mat-toolbar color="primary">
         <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center" class="main-toolbar">
-            <div>
+            
+                <span>               
+                    <span>
+                        <a mat-button [routerLink]="'/games'" class="mat-h1">YUNO</a>
+                    </span>
+                </span>
+        
+            <div fxLayout="row" fxLayoutAlign="space-between center" class="menu">
                 <span>
-                    YUNO
+                    <a mat-button [routerLink]="'/games'" class="mat-h1">Juegos</a>
+                </span>
+                <span>
+                    <a mat-button [routerLink]="'/'" class="mat-h1">Dashboard</a>
                 </span>
             </div>
-            <div fxLayout="row" fxLayoutAlign="space-between center" class="menu" >
-                <span>
-                    Juegos
-                </span>
-                <span>
-                    Categorias
-                </span>
-                <span>
-                    Ventas
-                </span>
-            </div>            
         </mat-toolbar-row>
-        <!-- <mat-toolbar-row>
-            Categorias
-        </mat-toolbar-row> -->
     </mat-toolbar>
 </div>
