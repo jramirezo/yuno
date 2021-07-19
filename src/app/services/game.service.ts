@@ -27,4 +27,10 @@ export class GameService {
       return this.http.get<Game>(this._baseUrl+id);
     }
 
+    addGame(newGame: Game): Observable<Game>{
+      console.log(JSON.stringify(newGame));
+      console.log(this.http.post<Game>(this._baseUrl+"saveGame",JSON.stringify(newGame)));
+      return this.http.post<Game>(this._baseUrl+"saveGame",newGame);
+    }
+
 }
