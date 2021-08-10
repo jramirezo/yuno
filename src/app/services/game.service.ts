@@ -2,29 +2,24 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import {Game} from '../models/Game';
-import { Prueba } from '../models/Prueba';
+import {environment} from '../../environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GameService {
 
-  _baseUrl = 'http://localhost:8080/games/';
+  private API_URL = environment.API_URL; 
 
   constructor(private http: HttpClient) { }
 
 
-    // getPrueba(): Observable<Prueba>{
-    //   return this.http.get<Prueba>(this._baseUrl); 
-    // }
-
-
     getGames(): Observable<Game[]>{
-      return this.http.get<Game[]>(this._baseUrl);
+      return this.http.get<Game[]>(`${this.API_URL}/games`);
     }
 
     getGame(id: string): Observable<Game>{
-      return this.http.get<Game>(this._baseUrl+id);
+      return this.http.get<Game>(`${this.API_URL}/games/${id}`);
     }
 
 }
