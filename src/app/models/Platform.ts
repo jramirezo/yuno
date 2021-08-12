@@ -1,5 +1,5 @@
 export class Platform{            
-    name: string| undefined;  
+    name: string | undefined;  
 }
 
 

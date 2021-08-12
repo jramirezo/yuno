@@ -29,18 +29,15 @@ export class AdminJuegosListComponent implements OnInit {
       }
     });
 
-    }
+  }
 
-
-
-    editar(game: Game): void {
-
-    }
-
-    eliminar(game: Game): void {
-
-    }
+  editar(game: Game): void {
 
   }
+
+  eliminar(game: Game): void {
+
+  }
+}
 
 
