@@ -6,7 +6,7 @@ import { PerfilJuegoComponent } from './pages/perfil-juego/perfil-juego.componen
 
 const routes: Routes = [
   {  path: 'games', component: AdminJuegosComponent},
-  {  path: 'prueba-card-juego', component: PerfilJuegoComponent},
+  {  path: 'perfil/:idGame', component: PerfilJuegoComponent},
   {  path: '', component: LandingComponent},
 ];
 
