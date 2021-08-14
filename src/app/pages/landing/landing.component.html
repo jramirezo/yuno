@@ -1,10 +1,72 @@
 <div>
+  <ngb-carousel
+  *ngIf="images"
+  [showNavigationArrows] ="false"
+  [showNavigationIndicators] ="false"
+  [keyboard] = "false"
+  >
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <video class="carousel" autoplay loop>
+          <source src="../../../assets/images/carousel/pexels-artem-podrez-7774309.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="carousel-caption">
+          <img class="text" src="../../../assets/images/carousel/caption.png">
+        </div>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <video class="carousel" autoplay loop>
+          <source src="../../../assets/images/carousel/pexels-artem-podrez-7774304.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="carousel-caption">
+          <img class="text" src="../../../assets/images/carousel/caption.png">
+        </div>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <video class="carousel" autoplay loop>
+          <source src="../../../assets/images/carousel/pexels-tima-miroshnichenko-6498755.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="carousel-caption">
+          <img class="text" src="../../../assets/images/carousel/caption.png">
+        </div>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <video class="carousel" autoplay loop>
+          <source src="../../../assets/images/carousel/pexels-ron-lach-7856706.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="carousel-caption">
+          <img class="text" src="../../../assets/images/carousel/caption.png">
+        </div>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <video class="carousel" autoplay loop>
+          <source src="../../../assets/images/carousel/pexels-shvets-production-7547663.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="carousel-caption">
+          <img class="text" src="../../../assets/images/carousel/caption.png">
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
 
-      <img class="img-responsive" class="carousel" src="assets/images/carousel/Stray.jfif">
-
- <!-- <carousel
-    [images]="images">
-  </carousel>-->
+  <div>
+    <p>Encuentra los mejores juegos para ti</p>
+    <img>
+    <p>YUNO tiene para gran variedad de categorías de juegos que estarán disponible para su compra y descargas donde quieras y cuando quieras. Juegos para múltiples plataformas.</p>
+  </div>
     <hr>
     <div>
         <h2 class="title">Estos son nuestros juegos disponibles</h2>

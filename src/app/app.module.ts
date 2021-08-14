@@ -28,6 +28,7 @@ import { PerfilJuegoComponent } from './pages/perfil-juego/perfil-juego.componen
 import { LandingComponent } from './pages/landing/landing.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { CardGameComponent } from './componentes/card-game/card-game.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 //import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
@@ -59,6 +60,7 @@ import { CardGameComponent } from './componentes/card-game/card-game.component';
     MatIconModule,
     MatListModule,
     MatGridListModule,
+    NgbModule,
     //IvyCarouselModule
   ],
   providers: [],
