@@ -35,3 +35,15 @@ Span button:before{  border: 2px solid #fff;
   transition: all .4s ease;
   color: #fff;
 }
+
+.menu span a:hover{
+  border: 2px solid;
+}
+
+.menu span a:hover{
+  border: 2px solid #7D5DEC;
+  transition: all .2s ease;
+  color: #7D5DEC !important;
+
+  text-decoration: none;
+}
