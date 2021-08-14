@@ -28,7 +28,7 @@ import { PerfilJuegoComponent } from './pages/perfil-juego/perfil-juego.componen
 import { LandingComponent } from './pages/landing/landing.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { CardGameComponent } from './componentes/card-game/card-game.component';
-
+//import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
@@ -40,16 +40,15 @@ import { CardGameComponent } from './componentes/card-game/card-game.component';
     PerfilJuegoComponent,
     LandingComponent,
     CardGameComponent,
-    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule, 
-    HttpClientModule, 
+    BrowserAnimationsModule,
+    HttpClientModule,
     FlexLayoutModule,
     ReactiveFormsModule,
-    MatFormFieldModule,    
+    MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
     MatSelectModule,
@@ -59,8 +58,8 @@ import { CardGameComponent } from './componentes/card-game/card-game.component';
     MatCardModule,
     MatIconModule,
     MatListModule,
-    MatGridListModule
-
+    MatGridListModule,
+    //IvyCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

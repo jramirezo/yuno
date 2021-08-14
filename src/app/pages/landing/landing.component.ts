@@ -10,7 +10,11 @@ import { GameService } from 'src/app/services/game.service';
 export class LandingComponent implements OnInit {
 
   games: Game[] | undefined;
-
+  //images = [
+  //  {path: 'assets/images/carousel/Stray2.jfif'},
+  //  {path: 'assets/images/carousel/Stray1.jfif'},
+ //   {path: 'assets/images/carousel/Stray3.jfif'},
+ // ]
   constructor(private gameService: GameService) { }
 
   ngOnInit(): void {
@@ -31,7 +35,7 @@ export class LandingComponent implements OnInit {
   // cargarGames(): void{
   //   this.gameService.getGames().subscribe({
   //     next: res => {
-  //       this.games = res;       
+  //       this.games = res;
   //       console.log('aaaa');
   //     }, error: err => {
   //       console.log(err);

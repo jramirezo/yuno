@@ -1,15 +1,18 @@
 <div>
-    <div class="bienvenida">
-        <h1>Bienvenidos Yuno</h1>
-    </div> 
-    <hr>   
+
+      <img class="img-responsive" class="carousel" src="assets/images/carousel/Stray.jfif">
+
+ <!-- <carousel
+    [images]="images">
+  </carousel>-->
+    <hr>
     <div>
-        <h2>Estos son nuestros juegos disponibles</h2>
+        <h2 class="title">Estos son nuestros juegos disponibles</h2>
         <div>
             <mat-grid-list cols="4" rowheight="2:1">
                 <mat-grid-tile *ngFor="let item of games; let i = index">
                     <app-card-game [game]="item"></app-card-game>
-                </mat-grid-tile>       
+                </mat-grid-tile>
             </mat-grid-list>
         </div>
     </div>
