@@ -1,3 +1,22 @@
 .menu {
     width: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#fullLogo {
+  width:12%;
+  margin-left: 50px;
+}
+
+Span a.options {
+  color: #7D5DEC;
+}
+
+Span button {
+  background-color: #7D5DEC;
+}
+
+.mat-toolbar.mat-primary {
+  background: none;
 }
