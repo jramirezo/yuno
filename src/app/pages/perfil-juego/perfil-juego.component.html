@@ -1,0 +1,28 @@
+<div class="card-prueba">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                {{game.name}}
+            </mat-card-title>
+            <mat-card-subtitle>Categoria</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="{{game.picture}}" alt="Foto del juego">
+        <mat-card-content>
+            <p>
+                {{game.description}}
+            </p>
+            <mat-nav-list>
+                <mat-list-item>Tamaño: {{game.size}} </mat-list-item>
+                <!-- <mat-list-item *ngFor="let platform of game.platforms">{{platform}}</mat-list-item> -->
+                <!-- <mat-list-item>{{game.platforms[0].name}}</mat-list-item> -->
+                <mat-list-item><span>Precio: ${{game.price}}</span> </mat-list-item>
+            </mat-nav-list>
+           
+        
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary">Comprar </button>
+            <button mat-raised-button color="warn" >Cerrar</button>
+          </mat-card-actions>
+    </mat-card>
+</div>
