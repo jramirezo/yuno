@@ -29,7 +29,8 @@ import { LandingComponent } from './pages/landing/landing.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { CardGameComponent } from './componentes/card-game/card-game.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-//import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { AuthModule } from './auth/auth.module';
+
 
 @NgModule({
   declarations: [
@@ -45,11 +46,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
+    BrowserAnimationsModule, 
+    AuthModule,
+    HttpClientModule, 
     FlexLayoutModule,
     ReactiveFormsModule,
-    MatFormFieldModule,
+    MatFormFieldModule,    
     MatInputModule,
     MatButtonModule,
     MatSelectModule,
@@ -61,7 +63,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatListModule,
     MatGridListModule,
     NgbModule,
-    //IvyCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

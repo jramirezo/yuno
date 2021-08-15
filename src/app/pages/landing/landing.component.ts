@@ -12,11 +12,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export class LandingComponent implements OnInit {
 
   games: Game[] | undefined;
-  images = [
-    '../../../assets/images/carousel/Stray.jfif',
-    '../../../assets/images/carousel/Stray1.jpg',
-    '../../../assets/images/carousel/Stray2.jpg',
-    '../../../assets/images/carousel/Stray3.jpg'];
   constructor(private gameService: GameService,
               config: NgbCarouselConfig) {
     config.interval = 5000;
@@ -44,7 +39,7 @@ export class LandingComponent implements OnInit {
   // cargarGames(): void{
   //   this.gameService.getGames().subscribe({
   //     next: res => {
-  //       this.games = res;
+  //       this.games = res;       
   //       console.log('aaaa');
   //     }, error: err => {
   //       console.log(err);

@@ -22,8 +22,8 @@ export class CardGameComponent implements OnInit {
 
     // this.gameService.getGame('game-1').subscribe({
     //   next: res => {
-    //     this.game = res;
-    //     console.log(this.game);
+    //     this.game = res;       
+    //     console.log(this.game);       
     //   }, error: err => {
     //     console.log(err);
     //   }
