@@ -2,7 +2,6 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Game } from 'src/app/models/Game';
 import { GameService } from 'src/app/services/game.service';
 import {COMMA, ENTER} from '@angular/cdk/keycodes';
-import {MatChipInputEvent} from '@angular/material/chips';
 
 @Component({
   selector: 'app-card-game',
