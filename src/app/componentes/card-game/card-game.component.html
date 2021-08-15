@@ -1,15 +1,44 @@
 <div class="card item">
-  <img class="card-img-top" src="{{game.cover}}" alt="Foto del juego">
-  <div class="card-body">
-
-    <p class="card-title">{{game.name}}</p>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">
-        <a class="category-item" *ngFor="let category of game.categories; let c = index">
-          {{category.name}}
-        </a>
-      </li>
-    </ul>
+  <div class="card-header">
+    <img class="card-img-top" src="{{game.cover}}" alt="Foto del juego">
+    <span>
+      <div *ngFor="let category of game.categories; let c = index">
+        <div class="badge badge-pill badge-light"> {{category.name}} </div>
+      </div>
+    </span>
     <a class="card-link" [routerLink]="['/perfil', game.id]" mat-raised-button>Ver</a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{game.name}}</h5>
+    <div >
+      <p class="card-text game-description"> {{game.description}}</p>
+    </div>
+  </div>
+  <div class="list-group list-group-flush platforms-section">
+    <div class="list-group-item platforms-list">
+      <div *ngFor="let platform of game.platforms; let c = index">
+        <img *ngIf="platform.name === 'Android'"
+             class="material-icons"
+             src="../../../assets/images/platform-icons/Android.png">
+        <img *ngIf="platform.name === 'IOS'"
+             class="material-icons"
+             src="../../../assets/images/platform-icons/iOS.png">
+        <img *ngIf="platform.name === 'PC'"
+             class="material-icons"
+             src="../../../assets/images/platform-icons/PC.png">
+        <img *ngIf="platform.name === 'PS4'"
+             class="material-icons"
+             src="../../../assets/images/platform-icons/PS4.png">
+        <img *ngIf="platform.name === 'Switch'"
+             class="material-icons"
+             src="../../../assets/images/platform-icons/Switch.png">
+        <img *ngIf="platform.name === 'Wii'"
+             class="material-icons"
+             src="../../../assets/images/platform-icons/Wii.png">
+        <img *ngIf="platform.name === 'XBOX ONE'"
+             class="material-icons"
+             src="../../../assets/images/platform-icons/XBOX.png">
+      </div>
+    </div>
   </div>
 </div>

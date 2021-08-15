@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Game } from 'src/app/models/Game';
 import { GameService } from 'src/app/services/game.service';
-
+import { MatChipInputEvent } from '@angular/material/chips';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
@@ -39,7 +40,7 @@ export class LandingComponent implements OnInit {
   // cargarGames(): void{
   //   this.gameService.getGames().subscribe({
   //     next: res => {
-  //       this.games = res;       
+  //       this.games = res;
   //       console.log('aaaa');
   //     }, error: err => {
   //       console.log(err);

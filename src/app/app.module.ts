@@ -31,7 +31,6 @@ import { CardGameComponent } from './componentes/card-game/card-game.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthModule } from './auth/auth.module';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,12 +45,12 @@ import { AuthModule } from './auth/auth.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule, 
+    BrowserAnimationsModule,
     AuthModule,
-    HttpClientModule, 
+    HttpClientModule,
     FlexLayoutModule,
     ReactiveFormsModule,
-    MatFormFieldModule,    
+    MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
     MatSelectModule,
