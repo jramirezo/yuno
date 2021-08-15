@@ -29,7 +29,7 @@ import { LandingComponent } from './pages/landing/landing.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { CardGameComponent } from './componentes/card-game/card-game.component';
 import { AuthModule } from './auth/auth.module';
-
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -61,7 +61,9 @@ import { AuthModule } from './auth/auth.module';
     MatCardModule,
     MatIconModule,
     MatListModule,
-    MatGridListModule
+    MatGridListModule,
+    MatSnackBarModule
+    
 
   ],
   providers: [],

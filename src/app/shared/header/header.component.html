@@ -1,24 +1,25 @@
 <div class="mat-typography">
     <mat-toolbar color="primary">
-        <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center" class="main-toolbar">
-            
+        <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center" class="main-toolbar">            
                 <span>               
                     <span>
                         <a mat-button [routerLink]="'/'" class="mat-h1">YUNO</a>
                     </span>
-                </span>
-        
-            <div fxLayout="row" fxLayoutAlign="space-between center" class="menu">
+                </span>        
+            <div fxLayout="row" fxLayoutAlign="space-between center" class="menu" *ngIf="admin">
                 <span>
                     <a mat-button [routerLink]="'/games'" class="mat-h1">Juegos</a>
                 </span>
                 <span>
-                    <a mat-button [routerLink]="'/'" class="mat-h1">Dashboard</a>
-                </span>
-                <span>
-                    <a mat-button  class="mat-h1" (click)="login()">Login</a>
+                    <a mat-button  class="mat-h1" (click)="logout()">Cerrar sesion</a>
                 </span>
             </div>
+            <div fxLayout="row" fxLayoutAlign="space-between center" class="menu" *ngIf="!admin">
+                <span>
+                    <a mat-button  class="mat-h1" (click)="login()">Iniciar sesion</a>
+                </span>
+            </div>
+
         </mat-toolbar-row>
     </mat-toolbar>
 </div>
