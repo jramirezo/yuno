@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="146c8447-9096-41a9-aa21-1fd092da9164" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/componentes/card-game/card-game.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/componentes/card-game/card-game.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/componentes/card-game/card-game.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/componentes/card-game/card-game.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/componentes/card-game/card-game.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/componentes/card-game/card-game.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/landing/landing.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/landing/landing.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/landing/landing.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/landing/landing.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

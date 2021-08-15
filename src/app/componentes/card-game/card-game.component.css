@@ -22,11 +22,14 @@
   background-color: #1E114E;
 }
 
-.card-link{
-  background-color: #7D5DEC;
+.card-link, li.list-group-item, .card-body, .card-subtitle{
   color: white;
 }
 
-.card-body, .card-subtitle{
-  color: white;
+.card-link{
+  background-color: #7D5DEC;
+}
+
+li.list-group-item{
+  background-color: #0D0C2F;
 }

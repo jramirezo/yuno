@@ -3,11 +3,13 @@
   <div class="card-body">
 
     <p class="card-title">{{game.name}}</p>
-    <p class="card-subtitle mb-2 text-muted">Categorías: </p>
-    <section *ngFor="let category of game.categories; let c = index">
-      <p>{{category.name}}</p>
-    </section>
-
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <a class="category-item" *ngFor="let category of game.categories; let c = index">
+          {{category.name}}
+        </a>
+      </li>
+    </ul>
     <a class="card-link" [routerLink]="['/perfil', game.id]" mat-raised-button>Ver</a>
   </div>
 </div>
