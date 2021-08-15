@@ -57,8 +57,17 @@
   width: 50px;
 }
 
-.games-list{
+.games-section{
   background-color: #0D0C2F;
+}
+
+*, *:before, *:after {box-sizing:  border-box !important;}
+
+.row {
+  -moz-column-width: 18em;
+  -webkit-column-width: 18em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap:1em;
 }
 
 .space-footer{
@@ -84,7 +93,7 @@
   height: 30px;
 }
 .purple-background{
-  background-color: #2E2D59;
+  background-color: #222148;
   color: white;
 }
 

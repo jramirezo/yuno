@@ -74,19 +74,20 @@
       </svg>
     </div>
   </div>
-    <div class="games-list">
+    <div class="games-section">
       <div class="space-section title">
         <h4 class="highlighted-text">Estos son nuestros</h4>
         <h4 class="textcolor-purple"> juegos </h4>
         <h4 class="highlighted-text">disponibles</h4>
       </div>
-        <div>
-            <mat-grid-list cols="4" rowheight="2:1">
-                <mat-grid-tile *ngFor="let item of games; let i = index">
-                    <app-card-game [game]="item"></app-card-game>
-                </mat-grid-tile>
-            </mat-grid-list>
+      <div class="games-list container">
+        <div class="row">
+          <div *ngFor="let item of games; let i = index" >
+            <app-card-game [game]="item" ></app-card-game>
+          </div>
         </div>
+      </div>
+
     </div>
   <!-- Footer -->
   <div class="footer">

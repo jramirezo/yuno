@@ -1,14 +1,13 @@
-<div class="card">
-    <mat-card>
+<div class="card item">
+  <img class="card-img-top" src="{{game.cover}}" alt="Foto del juego">
+  <div class="card-body">
 
-      <img class="game-image" mat-card-image src="{{game.picture}}" alt="Foto del juego">
-        <mat-card-content>
-          <mat-card-title>{{game.name}}</mat-card-title>
-          <mat-card-subtitle>Categoria</mat-card-subtitle>
-          <span>Precio: ${{game.price}}</span>
-        </mat-card-content>
-        <mat-card-actions>
-            <button [routerLink]="['/perfil', game.id]" mat-raised-button>Ver</button>
-        </mat-card-actions>
-    </mat-card>
+    <p class="card-title">{{game.name}}</p>
+    <p class="card-subtitle mb-2 text-muted">Categoría: </p>
+    <section *ngFor="let category of game.categories; let c = index">
+      <p>{{category.name}}</p>
+    </section>
+
+    <a class="card-link" [routerLink]="['/perfil', game.id]" mat-raised-button>Ver</a>
+  </div>
 </div>
