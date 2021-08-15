@@ -16,7 +16,6 @@ export class GameService {
 
 
     getGames(): Observable<Game[]>{
-      console.log('entro');
       return this.http.get<Game[]>(`${this.API_URL}games`);
     }
 

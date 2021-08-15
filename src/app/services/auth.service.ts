@@ -23,7 +23,7 @@ export class AuthService {
     //     }
     //   })      
     // )
-    return this.http.post<User>(this.API_URL+'user', user);
+    return this.http.post<User>(this.API_URL+"user", user);
   }
   
 }
