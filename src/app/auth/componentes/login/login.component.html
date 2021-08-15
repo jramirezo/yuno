@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Iniciar Sesión</h1>
+<div mat-dialog-content>
+    <form [formGroup]="FormLogin">
+        <mat-form-field appearance="fill">
+            <mat-label>Nombre de usuario</mat-label>
+            <input matInput type="text" formControlName="NombreUsuario">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label appearance="fill">Contraseña</mat-label>
+            <input matInput type="text" formControlName="Contrasenna">
+        </mat-form-field>
+    </form> 
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="primary"  cdkFocusInitial (click)="ingresar()">Ingresar</button>
+  <button mat-raised-button color="warn" >Cerrar</button>
+</div>

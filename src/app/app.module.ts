@@ -28,6 +28,7 @@ import { PerfilJuegoComponent } from './pages/perfil-juego/perfil-juego.componen
 import { LandingComponent } from './pages/landing/landing.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { CardGameComponent } from './componentes/card-game/card-game.component';
+import { AuthModule } from './auth/auth.module';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { CardGameComponent } from './componentes/card-game/card-game.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule, 
+    AuthModule,
     HttpClientModule, 
     FlexLayoutModule,
     ReactiveFormsModule,
