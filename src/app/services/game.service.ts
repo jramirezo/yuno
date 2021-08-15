@@ -17,11 +17,11 @@ export class GameService {
 
     getGames(): Observable<Game[]>{
       console.log('entro');
-      return this.http.get<Game[]>(`${this.API_URL}/games`);
+      return this.http.get<Game[]>(`${this.API_URL}games`);
     }
 
     getGame(id: string): Observable<Game>{
-      return this.http.get<Game>(`${this.API_URL}/games/${id}`);
+      return this.http.get<Game>(`${this.API_URL}games/${id}`);
     }
 
     addGame(newGame: Game): Observable<Game>{
