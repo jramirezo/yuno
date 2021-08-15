@@ -1,3 +1,178 @@
-.bienvenida{
-    height: 400px;
+
+.carousel{
+  height: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.title{
+  padding-top: 80px;
+  padding-bottom: 60px;
+  margin-left: 50px;
+  color: white;
+}
+
+.carousel-caption img{
+  height: 700px;
+  display: block;
+  vertical-align: center;
+}
+
+.carousel-caption{
+  width: 100%;
+  display: block;
+  vertical-align: center;
+  right: 0px;
+  left: 0px;
+}
+
+#info{
+  width: 600px;
+}
+
+.info-section{
+  padding-top: 80px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #222148;
+}
+
+.info-section p{
+  text-align: center;
+  color: white;
+}
+
+.info-section #description{
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.bi-arrow-down-square{
+  margin-top: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.games-section{
+  background-color: #0D0C2F;
+}
+
+*, *:before, *:after {box-sizing:  border-box !important;}
+
+.row {
+  -moz-column-width: 18em;
+  -webkit-column-width: 18em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap:1em;
+}
+
+
+/* Footer*/
+
+.space-footer{
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.footer{
+  font-size: 13px;
+  position: relative;
+}
+
+.footer-content{
+  padding-top: 35px;
+
+  justify-content:space-around;
+  display:flex;
+  flex-direction: row;
+}
+
+.footer-content-img{
+  width: 30px;
+  height: 30px;
+}
+.purple-background{
+  background-color: #222148;
+  color: white;
+}
+
+div .center{
+  object-fit: cover;
+  width: calc(100% - 50px);
+  height: auto;
+  margin: 0px auto 20px;
+  display: block;
+  width: 80%;
+}
+
+#logo-refran{
+  width: 80%;
+}
+
+.social-media{
+  margin-bottom: 20px;
+}
+
+.social-media a:hover{
+  color:#FEDD2B;
+}
+
+.social-media .textcolor-white svg{
+  padding-right: 10px;
+  width: 40px;
+  height: 30px;
+}
+
+.textcolor-white{
+  color: white;
+}
+
+.semiboldText{
+  font-weight: 500;
+}
+
+.terms a, follow{
+  text-decoration: none;
+}
+
+.terms a:hover{
+  color: #FEDD2B;
+}
+
+.termsandcondition-content{
+  width: 70%;
+  padding-left: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.termsandcondition-content h4{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-right: 30px;
+}
+
+#rightsandterms{
+  background-color: #7D5DEC;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+
+.space-section h4{
+  display:inline;
+}
+
+.highlighted-text{
+  font-weight: normal !important;
+}
+
+.textcolor-purple{
+  color: #7D5DEC;
+}
+

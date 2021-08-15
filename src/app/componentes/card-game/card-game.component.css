@@ -1,9 +1,35 @@
 .card{
-    width: 400px;
-    height: 400px;
+  width: 208px;
+  background-color: #0D0C2F;
+  border-radius: 5px;
+  border-bottom: 3px solid #0D0C2F;
+  border-top: 3px solid #0D0C2F;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.9);
+  padding: 0px;
+  background-color: #0D0C2F;
+  margin-left: 7px;
+  margin-bottom: 10px;
 }
 
-.imagen{
-    width: 200px;
-    height: 200px;
+
+.item {
+  display: inline-block;
+}
+
+.card:hover{
+  border-bottom: 3px solid #7D5DEC;
+  border-top: 3px solid #7D5DEC;
+  background-color: #1E114E;
+}
+
+.card-link, li.list-group-item, .card-body, .card-subtitle{
+  color: white;
+}
+
+.card-link{
+  background-color: #7D5DEC;
+}
+
+li.list-group-item{
+  background-color: #0D0C2F;
 }

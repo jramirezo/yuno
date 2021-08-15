@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Game } from 'src/app/models/Game';
 import { GameService } from 'src/app/services/game.service';
 
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
@@ -10,8 +12,14 @@ import { GameService } from 'src/app/services/game.service';
 export class LandingComponent implements OnInit {
 
   games: Game[] | undefined;
+  constructor(private gameService: GameService,
+              config: NgbCarouselConfig) {
+    config.interval = 5000;
+    config.wrap = true;
+    config.keyboard = true;
+    config.pauseOnHover = false;
 
-  constructor(private gameService: GameService) { }
+  }
 
   ngOnInit(): void {
     // this.cargarGames;

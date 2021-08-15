@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Game } from 'src/app/models/Game';
 import { GameService } from 'src/app/services/game.service';
+import {COMMA, ENTER} from '@angular/cdk/keycodes';
 
 @Component({
   selector: 'app-card-game',
@@ -10,10 +11,10 @@ import { GameService } from 'src/app/services/game.service';
 export class CardGameComponent implements OnInit {
 
   @Input()
-  game: Game = new Game; 
+  game: Game = new Game;
 
   // @Input()
-  // idGame: string | undefined; 
+  // idGame: string | undefined;
 
   constructor(private gameService: GameService) { }
 

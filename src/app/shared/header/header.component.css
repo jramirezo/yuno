@@ -1,3 +1,49 @@
+#fullLogo {
+  width:12%;
+  margin-left: 50px;
+}
+
+.mat-toolbar.mat-primary {
+  background: none;
+  transition: background-color 200ms linear;
+}
+
+mat-toolbar{
+  z-index: 998;
+  position: absolute;
+}
+
 .menu {
-    width: 300px;
+  width: 300px;
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+Span button {
+  border: 2px solid #fff;
+  transition: all .4s ease;
+  color: #fff;
+}
+Span button:hover {
+  background-color: #7D5DEC;
+  color: white;
+  border: 2px solid #7D5DEC;
+  opacity: 1;
+}
+
+Span button:before{  border: 2px solid #fff;
+  transition: all .4s ease;
+  color: #fff;
+}
+
+.menu span a:hover{
+  border: 2px solid;
+}
+
+.menu span a:hover{
+  border: 2px solid #7D5DEC;
+  transition: all .2s ease;
+  color: #7D5DEC !important;
+
+  text-decoration: none;
 }

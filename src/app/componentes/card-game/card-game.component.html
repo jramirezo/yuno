@@ -1,20 +1,15 @@
-<div class="card">
-    <mat-card>
-        <mat-card-header>
-            <mat-card-title>
-                {{game.name}}
-            </mat-card-title>
-            <mat-card-subtitle>Categoria</mat-card-subtitle>
-        </mat-card-header>
-        <img class="imagen" mat-card-image src="{{game.picture}}" alt="Foto del juego">
-        <mat-card-content>
-            <mat-nav-list>                
-                <mat-list-item><span>Precio: ${{game.price}}</span> </mat-list-item>
-            </mat-nav-list>          
-        
-        </mat-card-content>
-        <mat-card-actions>
-            <button [routerLink]="['/perfil', game.id]" mat-raised-button color="primary">Ver</button>        
-          </mat-card-actions>
-    </mat-card>
+<div class="card item">
+  <img class="card-img-top" src="{{game.cover}}" alt="Foto del juego">
+  <div class="card-body">
+
+    <p class="card-title">{{game.name}}</p>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <a class="category-item" *ngFor="let category of game.categories; let c = index">
+          {{category.name}}
+        </a>
+      </li>
+    </ul>
+    <a class="card-link" [routerLink]="['/perfil', game.id]" mat-raised-button>Ver</a>
+  </div>
 </div>
