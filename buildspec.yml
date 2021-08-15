@@ -10,6 +10,8 @@ phases:
     runtime-versions:
         nodejs: 14
     commands:
+        - rm package-lock.json
+        - rm -r node_modules
         - echo Installing source NPM dependencies...
         - npm install
         - npm install -g @angular/cli
