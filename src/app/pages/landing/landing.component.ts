@@ -28,7 +28,6 @@ export class LandingComponent implements OnInit {
     this.gameService.getGames().subscribe({
       next: res => {
         this.games = res;
-        console.log('aaaa');
       }, error: err => {
         console.log(err);
       }
