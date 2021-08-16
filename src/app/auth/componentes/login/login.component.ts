@@ -1,12 +1,8 @@
-import { ClassGetter, THIS_EXPR } from '@angular/compiler/src/output/output_ast';
-import { Component, Inject, OnInit } from '@angular/core';
+import { ClassGetter } from '@angular/compiler/src/output/output_ast';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { MatDialogRef, MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { Router } from '@angular/router';
+import { Usuario } from 'src/app/models/Usuario';
 import { AuthService } from 'src/app/services/auth.service';
-import { User } from '../../../models/User';
-
 
 @Component({
   selector: 'app-login',
@@ -20,55 +16,33 @@ export class LoginComponent implements OnInit {
     Contrasenna: new FormControl('', Validators.required)
   });
 
-  user: User = new User();
-
+  user: Usuario = new Usuario();
   
-  constructor(private authService: AuthService, 
-    public dialogRef: MatDialogRef<LoginComponent>,
-     private router:Router,
-     private _snackBar: MatSnackBar
-   ) { }
+  constructor(private authService: AuthService) { }
 
   ngOnInit(): void {
   }
 
 
-  validar(usu: User): boolean{    
+  validar(usu: Usuario): void{    
 
-    let login: boolean = false;
-
-    this.authService.login(usu).subscribe({
+    this.authService.login(usu.user || '', usu.password || '').subscribe({
       next: res => {
-        
-        if(res.userName !== null){
-          localStorage.setItem('user', 'valido');
-          console.log('Usuario Loggeado');
-          login = true;    
-          this.router.navigate(['']);      
-        
-        }else{
-          this._snackBar.open("No existe el usuario", "cerrar");        
-        }
-        
-
+        console.log('Usuario Loggeado');
       }, error: err =>{
-        this._snackBar.open("Hubo un error", "cerrar");     
+        console.log(err);
       }
     });    
-
-    return login;
   }
 
   ingresar(): void {
-      
-    if(this.FormLogin.valid){     
-      this.user.userName = this.FormLogin.get('NombreUsuario')?.value;
-      this.user.password = this.FormLogin.get('Contrasenna')?.value;      
-      this.validar(this.user);
-      this.dialogRef.close();
 
+    if(this.FormLogin.valid){     
+      this.user.user = this.FormLogin.get('NombreUsuario')?.value;
+      this.user.password = this.FormLogin.get('NombreUsuario')?.value;
+      this.validar(this.user);
     }else {
-      this._snackBar.open("Faltaron datos de ingresar", "cerrar");
+      console.log('Faltan datos')
     }   
 
   }

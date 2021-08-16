@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { HostListener } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { LoginComponent } from 'src/app/auth/componentes/login/login.component';
-import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,31 +10,23 @@ import {Router} from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  admin: boolean = false; 
-
-  constructor(public dialog: MatDialog, private router:Router) { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
-
-    if(localStorage.getItem('user')!== null){
-      this.admin =true;
-    }
   }
 
   login(): void {
     const dialogRef = this.dialog.open(LoginComponent, {
       width: '250px',
+      //data: {name: this.name, animal: this.animal}
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      this.router.navigate(['']);
-    });
-  }
+      // console.log('The dialog was closed');
+      // this.animal = result;
 
-  logout(): void {
-    localStorage.removeItem('user');
-    this.admin = false;
-    this.router.navigate(['']);
+      // REDIRECCIONAR A INICIO!!!
+    });
   }
 
 }
