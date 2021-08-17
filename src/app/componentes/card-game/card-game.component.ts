@@ -14,22 +14,11 @@ export class CardGameComponent implements OnInit {
   @Input()
   game: Game = new Game; 
 
-  // @Input()
-  // idGame: string | undefined; 
-
   constructor(private gameService: GameService,
     public dialog: MatDialog) { }
 
   ngOnInit(): void {
 
-    // this.gameService.getGame('game-1').subscribe({
-    //   next: res => {
-    //     this.game = res;       
-    //     console.log(this.game);       
-    //   }, error: err => {
-    //     console.log(err);
-    //   }
-    // });
   }
 
   ver(): void{

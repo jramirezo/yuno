@@ -9,7 +9,7 @@
         <mat-list-item>Tamaño: {{data.size}} </mat-list-item>
         <mat-list-item><span>Precio: ${{data.price}}</span> </mat-list-item>
         Categorías:
-        <mat-list-item *ngFor="let category of data.categories; let c = index"><span>{{category.name}}</span> </mat-list-item>
+        <mat-list-item *ngFor="let category of data.categories; let c = index"><span>- {{category.name}}</span> </mat-list-item>
     </mat-nav-list>
 </div>
 <div mat-dialog-actions>

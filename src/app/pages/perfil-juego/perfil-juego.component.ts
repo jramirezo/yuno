@@ -12,11 +12,6 @@ import { GameService } from 'src/app/services/game.service';
 })
 export class PerfilJuegoComponent implements OnInit {
 
-
- // @Input()
-  //game: Game = new Game; 
-
- // @Input()
   idGame: string = ''; 
 
   constructor(private gameService: GameService,
@@ -26,18 +21,7 @@ export class PerfilJuegoComponent implements OnInit {
      ) { }
 
   ngOnInit(): void {
-    console.log(this.data);
-
-  //   this.idGame = this.rutaActiva.snapshot.params.idGame;
-
-  //   this.gameService.getGame(this.idGame).subscribe({
-  //     next: res => {
-  //       this.data = res;                   
-  //     }, error: err => {
-  //       console.log(err);
-  //     }
-  //   });
-  // }
+ 
   }
 
   comprar(): void {
