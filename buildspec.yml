@@ -10,13 +10,9 @@ phases:
     runtime-versions:
         nodejs: 14
     commands:
-        - rm package-lock.json
-        - rm -r node_modules
         - echo Installing source NPM dependencies...
         - npm install
         - npm install -g @angular/cli
-        - npm install ngx-bootstrap --save
-        - npm install ngx-bootstrap bootstrap --save
   build:
     commands:
         - echo Build started 

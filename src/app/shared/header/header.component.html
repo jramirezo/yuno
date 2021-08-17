@@ -1,22 +1,25 @@
-<div class="mat-typography nav">
+<div class="mat-typography">
     <mat-toolbar color="primary">
-        <mat-toolbar-row class="menu" fxLayout="row" fxLayoutAlign="space-between center" class="main-toolbar">
-
-                <span>
+        <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center" class="main-toolbar">            
+                <span>               
                     <span>
-                      <img class="img-responsive" id="fullLogo" src="assets/images/fullLogo.svg">
+                        <a mat-button [routerLink]="'/'" class="mat-h1">YUNO</a>
                     </span>
-                </span>
-
-            <div fxLayout="row" fxLayoutAlign="space-between center" class="menu">
+                </span>        
+            <div fxLayout="row" fxLayoutAlign="space-between center" class="menu" *ngIf="admin">
                 <span>
-                    <a class="nav-item" mat-button [routerLink]="'/'" class="mat-h1 options">Inicio</a>
-                    <a mat-button [routerLink]="'/games'" class="mat-h1 options">Juegos</a>
+                    <a mat-button [routerLink]="'/games'" class="mat-h1">Juegos</a>
                 </span>
-              <span class="ml-3">
-                    <a mat-button  class="mat-h1" (click)="login()">Ingresar</a>
-              </span>
+                <span>
+                    <a mat-button  class="mat-h1" (click)="logout()">Cerrar sesion</a>
+                </span>
             </div>
+            <div fxLayout="row" fxLayoutAlign="space-between center" class="menu" *ngIf="!admin">
+                <span>
+                    <a mat-button  class="mat-h1" (click)="login()">Iniciar sesion</a>
+                </span>
+            </div>
+
         </mat-toolbar-row>
     </mat-toolbar>
 </div>

@@ -1,133 +1,16 @@
 <div>
-  <ngb-carousel
-  [showNavigationArrows] ="false"
-  [showNavigationIndicators] ="false"
-  [keyboard] = "false"
-  >
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <video class="carousel" autoplay loop>
-          <source src="../../../assets/images/carousel/pexels-artem-podrez-7774309.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="carousel-caption">
-          <img class="text" src="../../../assets/images/carousel/caption.png">
+    <div class="bienvenida">
+        <h1>Bienvenidos Yuno</h1>
+    </div> 
+    <hr>   
+    <div>
+        <h2>Estos son nuestros juegos disponibles</h2>
+        <div>
+            <mat-grid-list cols="4" rowheight="2:1">
+                <mat-grid-tile *ngFor="let item of games; let i = index">
+                    <app-card-game [game]="item"></app-card-game>
+                </mat-grid-tile>       
+            </mat-grid-list>
         </div>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <video class="carousel" autoplay loop>
-          <source src="../../../assets/images/carousel/pexels-artem-podrez-7774304.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="carousel-caption">
-          <img class="text" src="../../../assets/images/carousel/caption.png">
-        </div>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <video class="carousel" autoplay loop>
-          <source src="../../../assets/images/carousel/pexels-tima-miroshnichenko-6498755.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="carousel-caption">
-          <img class="text" src="../../../assets/images/carousel/caption.png">
-        </div>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <video class="carousel" autoplay loop>
-          <source src="../../../assets/images/carousel/pexels-ron-lach-7856706.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="carousel-caption">
-          <img class="text" src="../../../assets/images/carousel/caption.png">
-        </div>
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <video class="carousel" autoplay loop>
-          <source src="../../../assets/images/carousel/pexels-shvets-production-7547663.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="carousel-caption">
-          <img class="text" src="../../../assets/images/carousel/caption.png">
-        </div>
-      </div>
-    </ng-template>
-  </ngb-carousel>
-
-  <div class="info-section">
-    <p><b>ENCUENTRA LOS MEJORES JUEGOS PARA TI</b></p>
-    <img class="img-responsive" id="info" src="../../../assets/images/info-section/Info.png">
-    <p id="description" class="mt-3">YUNO tiene para gran variedad de categorías de juegos que estarán disponible <br>
-      para su compra y descargas donde quieras y cuando quieras.</p>
-
-    <div class="mt-3">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-down-square" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
-      </svg>
     </div>
-  </div>
-    <div class="games-section">
-      <div class="space-section title">
-        <h4 class="highlighted-text">Estos son nuestros</h4>
-        <h4 class="textcolor-purple"> juegos </h4>
-        <h4 class="highlighted-text">disponibles</h4>
-      </div>
-      <div class="games-list container">
-        <div class="row">
-          <div *ngFor="let item of games; let i = index" >
-            <app-card-game [game]="item" ></app-card-game>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  <!-- Footer -->
-  <div class="footer">
-    <div class="footer-Content purple-background">
-      <div class="container">
-        <div class="row space-footer">
-          <div class="col-lg-4">
-            <div class="center">
-              <img id="logo-refran" src="../../../assets/images/footer/logo-refran.svg" />
-            </div>
-            <div class="left social-media">
-              <a class="textcolor-white follow" href="https://www.facebook.com/profile.php?id=100068881241500&viewas=100000686899395">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="white"
-                     class="bi bi-facebook" viewBox="0 0 16 16">
-                  <path
-                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                </svg>
-                Siguenos en facebook
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div>
-              <p>Dirección San José Centro. De la iglesia los costales 100 mts sur.</p>
-              <p>Tel. 8730-5120 / 2234-7325</p>
-              <p>contacto@yunocr.com</p>
-              <p>Lunes a Sábado de 9:00am a 6:00pm / Domingo cerrado.</p>
-            </div>
-          </div>
-          <div class="col-lg-2">
-            <p class="semiboldText">Información importante</p>
-            <div class="terms">
-              <p><a class="textcolor-white" href="">Política de Garantía</a></p>
-              <p><a class="textcolor-white" href="">Terminos De Privacidad</a></p>
-              <p><a class="textcolor-white" href="">Terminos y condiciones</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p id="rightsandterms" class="">© 2021 YUNO. Todos los Derechos Reservados.</p>
-  </div>
-  <!-- END Footer -->
 </div>

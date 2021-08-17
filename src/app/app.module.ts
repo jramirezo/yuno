@@ -28,9 +28,8 @@ import { PerfilJuegoComponent } from './pages/perfil-juego/perfil-juego.componen
 import { LandingComponent } from './pages/landing/landing.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { CardGameComponent } from './componentes/card-game/card-game.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthModule } from './auth/auth.module';
-
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -42,6 +41,7 @@ import { AuthModule } from './auth/auth.module';
     PerfilJuegoComponent,
     LandingComponent,
     CardGameComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -62,7 +62,9 @@ import { AuthModule } from './auth/auth.module';
     MatIconModule,
     MatListModule,
     MatGridListModule,
-    NgbModule,
+    MatSnackBarModule
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
