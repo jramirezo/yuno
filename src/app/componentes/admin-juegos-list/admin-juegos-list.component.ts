@@ -21,15 +21,6 @@ export class AdminJuegosListComponent implements OnInit {
 
   ngOnInit(): void {
 
-    // this.gameService.getGames().subscribe({
-    //   next: res => {
-    //     this.dataJuegos.data = res;       
-    //     console.log(this.dataJuegos.data);
-    //   }, error: err => {
-    //     console.log(err);
-    //   }
-    // });
-
     this.cargarJuegos();
   }
 
@@ -52,9 +43,8 @@ export class AdminJuegosListComponent implements OnInit {
     this.gameService.getGames().subscribe({
       next: res => {
         this.dataJuegos.data = res;       
-       // console.log(this.dataJuegos.data);
       }, error: err => {
-        console.log(err);
+        this._snackBar.open("Ocurrio un error", "cerrar")
       }
     });
   }

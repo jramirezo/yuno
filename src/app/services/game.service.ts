@@ -11,8 +11,6 @@ import { ClassGetter } from '@angular/compiler/src/output/output_ast';
 export class GameService {
 
   private API_URL = environment.API_URL; 
- // private headers = new Headers({ 'Content-Type': 'application/json'}); 
-
 
 
   constructor(private http: HttpClient) { }
