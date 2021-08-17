@@ -26,6 +26,7 @@ export class PerfilJuegoComponent implements OnInit {
      ) { }
 
   ngOnInit(): void {
+    console.log(this.data);
 
   //   this.idGame = this.rutaActiva.snapshot.params.idGame;
 

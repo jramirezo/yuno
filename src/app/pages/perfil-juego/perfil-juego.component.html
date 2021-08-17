@@ -8,7 +8,8 @@
     <mat-nav-list>
         <mat-list-item>Tamaño: {{data.size}} </mat-list-item>
         <mat-list-item><span>Precio: ${{data.price}}</span> </mat-list-item>
-        <!-- <mat-list-item *ngFor="let category of game.categories; let c = index"><span>Categorías: ${{c.name}}</span> </mat-list-item> -->
+        Categorías:
+        <mat-list-item *ngFor="let category of data.categories; let c = index"><span>{{category.name}}</span> </mat-list-item>
     </mat-nav-list>
 </div>
 <div mat-dialog-actions>
@@ -16,7 +17,3 @@
     <button mat-raised-button [mat-dialog-close] color="warn" >Cerrar</button>  
 </div>
 
-
-<!-- <a class="category-item" *ngFor="let category of game.categories; let c = index">
-    {{category.name}}
-  </a> -->
