@@ -21,7 +21,6 @@ export class LoginComponent implements OnInit {
   });
 
   user: User = new User();
-
   
   constructor(private authService: AuthService, 
     public dialogRef: MatDialogRef<LoginComponent>,
@@ -33,19 +32,14 @@ export class LoginComponent implements OnInit {
   }
 
 
-  validar(usu: User): boolean{    
-
-    let login: boolean = false;
+  validar(usu: User): void{    
 
     this.authService.login(usu).subscribe({
       next: res => {
         
         if(res.userName !== null){
-          localStorage.setItem('user', 'valido');
-          console.log('Usuario Loggeado');
-          login = true;    
-          this.router.navigate(['']);      
-        
+          localStorage.setItem('user', 'valido');   
+          this.router.navigate(['']);              
         }else{
           this._snackBar.open("No existe el usuario", "cerrar");        
         }
@@ -55,8 +49,6 @@ export class LoginComponent implements OnInit {
         this._snackBar.open("Hubo un error", "cerrar");     
       }
     });    
-
-    return login;
   }
 
   ingresar(): void {
