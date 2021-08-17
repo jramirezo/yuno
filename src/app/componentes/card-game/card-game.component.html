@@ -4,17 +4,18 @@
             <mat-card-title>
                 {{game.name}}
             </mat-card-title>
-            <mat-card-subtitle>Categoria</mat-card-subtitle>
+            <mat-card-subtitle>{{game.categories}}</mat-card-subtitle>
         </mat-card-header>
         <img class="imagen" mat-card-image src="{{game.picture}}" alt="Foto del juego">
         <mat-card-content>
             <mat-nav-list>                
                 <mat-list-item><span>Precio: ${{game.price}}</span> </mat-list-item>
-            </mat-nav-list>          
+            </mat-nav-list>         
+            
         
         </mat-card-content>
         <mat-card-actions>
-            <button [routerLink]="['/perfil', game.id]" mat-raised-button color="primary">Ver</button>        
+            <button (click)="ver()" mat-raised-button color="primary">Ver</button>        
           </mat-card-actions>
     </mat-card>
 </div>

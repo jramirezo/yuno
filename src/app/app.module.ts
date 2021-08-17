@@ -30,6 +30,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { CardGameComponent } from './componentes/card-game/card-game.component';
 import { AuthModule } from './auth/auth.module';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,9 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatIconModule,
     MatListModule,
     MatGridListModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatDialogModule
+    
     
 
   ],
