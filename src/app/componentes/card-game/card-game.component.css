@@ -7,3 +7,23 @@
     width: 200px;
     height: 200px;
 }
+
+.mat-card, .mat-list-text, span, .mat-card-subtitle, button, a{
+    color: #fff !important;
+}
+
+
+.mat-card, .mat-list-text, span, .mat-card-subtitle{
+    background-color: #0D0C2F !important;
+}
+
+button, a {
+    background-color: #7D5DEC !important;
+}
+
+.mat-nav-list, img, .mat-card-content{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}

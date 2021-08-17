@@ -1,11 +1,9 @@
-<div>
+<div class="content">
     <div class="bienvenida">
-        <h1>Bienvenidos Yuno</h1>
     </div> 
-    <hr>   
     <div>
         <h2>Estos son nuestros juegos disponibles</h2>
-        <div>
+        <div class="games-list">
             <mat-grid-list cols="4" rowheight="2:1">
                 <mat-grid-tile *ngFor="let item of games; let i = index">
                     <app-card-game [game]="item"></app-card-game>
@@ -13,4 +11,8 @@
             </mat-grid-list>
         </div>
     </div>
+</div>
+
+<div class="footer">
+<p>© 2019 YUNO. Todos los derechos reservados.</p>
 </div>

@@ -1,4 +1,16 @@
 .card-prueba{
     width: 400px;
-    height: 400px;    
+    height: 700px;    
+}
+
+.mat-dialog-content{
+    background-color: #fff;
+}
+
+h1, .mat-raised-button{
+    color: #fff;
+}
+
+.Buy{
+    background-color: #7D5DEC !important;
 }

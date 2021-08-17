@@ -1,7 +1,7 @@
 <h1 mat-dialog-title>{{data.name}}</h1>
 <div  mat-dialog-content>
 
-    <img mat-card-image src="{{data.picture}}" alt="Foto del juego">
+    <img mat-card-image src="{{data.cover}}" alt="Foto del juego">
     <p>
         {{data.description}}
     </p>
@@ -9,11 +9,24 @@
         <mat-list-item>Tamaño: {{data.size}} </mat-list-item>
         <mat-list-item><span>Precio: ${{data.price}}</span> </mat-list-item>
         Categorías:
-        <mat-list-item *ngFor="let category of data.categories; let c = index"><span>- {{category.name}}</span> </mat-list-item>
+        <mat-list-item *ngIf="data.categories?.length === 0">
+            <span>No pertenece a una categoría.</span>
+        </mat-list-item>
+        <mat-list-item *ngFor="let category of data.categories; let c = index">
+            <span>- {{category.name}}</span> 
+        </mat-list-item>
+        Plataformas:
+        <mat-list-item *ngIf="data.platforms?.length === 0">
+            <span>Ninguna.</span>
+        </mat-list-item>
+        <mat-list-item *ngFor="let platform of data.platforms; let p = index">
+            <span>- {{platform.name}}</span> 
+        </mat-list-item>
+    
     </mat-nav-list>
 </div>
 <div mat-dialog-actions>
-    <button mat-raised-button color="primary" cdkFocusInitial (click)="comprar()">Comprar</button>
+    <button mat-raised-button color="primary" cdkFocusInitial (click)="comprar()" class="Buy">Comprar</button>
     <button mat-raised-button [mat-dialog-close] color="warn" >Cerrar</button>  
 </div>
 

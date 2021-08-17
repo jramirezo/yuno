@@ -1,0 +1,15 @@
+form .mat-form-field, h1, .mat-form-field-flex input, .mat-form-field-label,
+.mat-form-field-label, .ng-tns-c85-1, .mat-empty, .mat-form-field-empty, .ng-star-inserted,
+
+.mat-input-element
+{
+    color: #fff !important;
+}
+
+::ng-deep.mat-form-field-ripple{
+    background-color: #7D5DEC !important;
+}
+
+.login {
+    background-color: #7D5DEC !important;
+}

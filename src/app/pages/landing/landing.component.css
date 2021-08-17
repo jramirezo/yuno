@@ -1,3 +1,44 @@
 .bienvenida{
-    height: 400px;
+    height: 750px;
+    background-image: url('../../../assets/background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #2E2D59;
+}
+
+.content, .mat-grid-list, .mat-grid-tile, .mat-grid-tile-content, .mat-card{
+    background-color: #0D0C2F !important;
+}
+
+.content{
+    padding-bottom: 16px;
+}
+
+h2, .footer p{
+    color: #fff !important;
+}
+
+h2{
+    margin-top: 0px;
+    margin-bottom: 35px;
+    padding-top: 65px;
+    padding-bottom: 45px;
+    padding-left: 35px;
+    background-color: #2E2D59 !important;
+}
+
+.games-list, h2{
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.footer, .footer p{
+    background-color: #7D5DEC !important;
+    margin-top: 0px !important;
+}
+
+.footer p{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
 }
